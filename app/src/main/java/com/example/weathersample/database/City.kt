@@ -11,7 +11,7 @@ import java.util.*
 @Entity
 data class City(
     @PrimaryKey
-    @NonNull @ColumnInfo(name = "id")
+    //@NonNull @ColumnInfo(name = "id")
     val id: Int = 0,
     @NonNull @ColumnInfo(name = "name")
     val cityName: String,
