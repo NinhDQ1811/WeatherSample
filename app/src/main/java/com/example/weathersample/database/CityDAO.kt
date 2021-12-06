@@ -13,6 +13,6 @@ interface CityDAO {
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun insert(city: City): Long
 
-    @Query("SELECT * from City ")
+    @Query("SELECT * FROM City ")
     fun getItems(): List<City>
 }
