@@ -1,5 +1,6 @@
 package com.example.weathersample.database
 
+import androidx.annotation.NonNull
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
@@ -10,11 +11,11 @@ import java.util.*
 @Entity
 data class City(
     @PrimaryKey
-    @ColumnInfo(name = "id")
+    @NonNull @ColumnInfo(name = "id")
     val id: Int = 0,
-    @ColumnInfo(name = "name")
+    @NonNull @ColumnInfo(name = "name")
     val cityName: String,
-    @ColumnInfo(name = "country")
+    @NonNull @ColumnInfo(name = "country")
     val country: String
 ): ForeCastType
 

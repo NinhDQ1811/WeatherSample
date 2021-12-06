@@ -17,7 +17,7 @@ abstract class CityDatabase : RoomDatabase() {
                 if (!::INSTANCE.isInitialized) {
                     INSTANCE = Room.databaseBuilder(context.applicationContext,
                         CityDatabase::class.java,
-                        "city").build()
+                        "city").createFromAsset("database/weather.db").build()
                 }
             }
             return INSTANCE
